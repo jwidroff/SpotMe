@@ -1,0 +1,6 @@
+framework module Pods_SpotMePresentation {
+  umbrella header "Pods-SpotMePresentation-umbrella.h"
+
+  export *
+  module * { export * }
+}

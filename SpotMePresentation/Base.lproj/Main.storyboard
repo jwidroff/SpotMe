@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpotMePresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QuE-iJ-c61">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-Lu-Skm">
+                                <rect key="frame" x="16" y="44" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Users  Looking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="usersLookingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZ9-vf-Oa6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3I-d4-WBc">
+                                <rect key="frame" x="284" y="44" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Cheapest Closest">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closestCheapestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1v7-Dc-5Uv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-KC-0Sf">
+                                <rect key="frame" x="284" y="369" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Save My Spot" backgroundImage="noun_1679461_cc">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveMySpotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEB-fc-xoR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-Ev-NkA">
+                                <rect key="frame" x="16" y="369" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PJK-cK-Nd8"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dz2-wl-pry">
+                                <rect key="frame" x="10" y="693" width="355" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3b-Mc-SZX">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="75"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Give a Spot">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="giveASpotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fj1-AC-FEi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPk-yA-pUh">
+                                        <rect key="frame" x="186" y="0.0" width="169" height="75"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="0.70015517979452058" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Get a Spot">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getASpotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHV-uY-qSc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ZKj-Tv-gFq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QuE-iJ-c61" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Gv-9E-15r"/>
+                            <constraint firstItem="QuE-iJ-c61" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IiM-G3-Dkk"/>
+                            <constraint firstAttribute="trailing" secondItem="Dz2-wl-pry" secondAttribute="trailing" constant="10" id="NBc-d4-AIV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dz2-wl-pry" secondAttribute="bottom" constant="10" id="QdJ-N5-QQM"/>
+                            <constraint firstItem="Dz2-wl-pry" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="aPR-sT-bE0"/>
+                            <constraint firstItem="QuE-iJ-c61" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jH5-CS-oHI"/>
+                            <constraint firstItem="QuE-iJ-c61" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="sgc-Hm-WPI"/>
+                            <constraint firstAttribute="trailing" secondItem="QuE-iJ-c61" secondAttribute="trailing" id="uba-Vc-XU1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="closestCheapestBtn" destination="g3I-d4-WBc" id="hkd-Bx-RWg"/>
+                        <outlet property="getASpotBtn" destination="kPk-yA-pUh" id="6SF-6d-cMh"/>
+                        <outlet property="giveASpotBtn" destination="s3b-Mc-SZX" id="uPB-ln-A7x"/>
+                        <outlet property="mapView" destination="QuE-iJ-c61" id="JIJ-4z-phN"/>
+                        <outlet property="saveMySpotBtn" destination="ffP-KC-0Sf" id="BgW-ws-FJb"/>
+                        <outlet property="settingsBtn" destination="kgv-Ev-NkA" id="gH8-ym-coS"/>
+                        <outlet property="usersLookingBtn" destination="Hbk-Lu-Skm" id="WXr-Lc-6dD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.57142857142858" y="133.59999999999999"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="0dp-d5-qzf">
+            <objects>
+                <viewController storyboardIdentifier="popUpViewVC" modalPresentationStyle="overCurrentContext" id="HuM-eT-1vJ" customClass="PopUpViewController" customModule="SpotMePresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jzx-gV-zD4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1y-qP-eVl">
+                                <rect key="frame" x="16" y="44" width="343" height="734"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Z-V5-0zR">
+                                        <rect key="frame" x="151.66666666666666" y="317" width="40" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Vry-Av-NVz"/>
+                                        </constraints>
+                                        <state key="normal" title="BACK"/>
+                                        <connections>
+                                            <action selector="backBtn:" destination="HuM-eT-1vJ" eventType="touchUpInside" id="8jZ-VM-aeQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Y2Z-V5-0zR" firstAttribute="centerX" secondItem="q1y-qP-eVl" secondAttribute="centerX" id="Z5M-YU-486"/>
+                                    <constraint firstItem="Y2Z-V5-0zR" firstAttribute="centerY" secondItem="q1y-qP-eVl" secondAttribute="centerY" id="cP6-mJ-e1w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bw8-ng-zjd" firstAttribute="bottom" secondItem="q1y-qP-eVl" secondAttribute="bottom" id="Cny-we-CRt"/>
+                            <constraint firstItem="q1y-qP-eVl" firstAttribute="leading" secondItem="bw8-ng-zjd" secondAttribute="leading" constant="16" id="Dwe-3v-1QU"/>
+                            <constraint firstItem="q1y-qP-eVl" firstAttribute="top" secondItem="bw8-ng-zjd" secondAttribute="top" id="e07-Dd-sRM"/>
+                            <constraint firstItem="bw8-ng-zjd" firstAttribute="trailing" secondItem="q1y-qP-eVl" secondAttribute="trailing" constant="16" id="ffW-jI-X4d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bw8-ng-zjd"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="q1y-qP-eVl" id="Sdu-ma-nv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvd-WL-ZFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noun_1679461_cc" width="700" height="700"/>
+    </resources>
+</document>
